@@ -1,6 +1,8 @@
+//  github: https://github.com/MakeZL/UIView-Category
+//  author: @email <120886865@qq.com>
 //
 //  UILabel+MBIBnsepectable.h
-//  XiaoMaBao
+//  MakeZL
 //
 //  Created by 张磊 on 15/5/1.
 //  Copyright (c) 2015年 MakeZL. All rights reserved.

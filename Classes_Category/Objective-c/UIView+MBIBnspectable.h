@@ -14,9 +14,12 @@
 
 @property (assign,nonatomic) IBInspectable NSInteger cornerRadius;
 @property (assign,nonatomic) IBInspectable NSInteger borderWidth;
-@property (strong,nonatomic) IBInspectable UIColor  *borderColor;
+@property (assign,nonatomic) IBInspectable BOOL      masksToBounds;
+// set border hex color
+@property (strong,nonatomic) IBInspectable NSString  *borderHexRgb;
+@property (strong,nonatomic) IBInspectable UIColor   *borderColor;
 // set background hex color
-@property (assign,nonatomic) IBInspectable NSString *hexRgbColor;
+@property (assign,nonatomic) IBInspectable NSString  *hexRgbColor;
 @property (assign,nonatomic) IBInspectable BOOL      onePx;
 
 @end

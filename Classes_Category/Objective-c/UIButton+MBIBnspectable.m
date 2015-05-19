@@ -1,22 +1,20 @@
-//  github: https://github.com/MakeZL/UIView-Category
-//  author: @email <120886865@qq.com>
 //
-//  UILabel+MBIBnsepectable.m
-//  MakeZL
+//  UIButton+MBIBnspectable.m
+//  XiaoMaBao
 //
-//  Created by 张磊 on 15/5/1.
+//  Created by 张磊 on 15/5/4.
 //  Copyright (c) 2015年 MakeZL. All rights reserved.
 //
 
-#import "UILabel+MBIBnsepectable.h"
+#import "UIButton+MBIBnspectable.h"
 
-@implementation UILabel (MBIBnsepectable)
+@implementation UIButton (MBIBnspectable)
 #pragma mark - hexRgbColor
-- (void)setTextHexColor:(NSString *)textHexColor{
-    NSScanner *scanner = [NSScanner scannerWithString:textHexColor];
+- (void)setTitleHexColor:(NSString *)titleHexColor{
+    NSScanner *scanner = [NSScanner scannerWithString:titleHexColor];
     unsigned hexNum;
     if (![scanner scanHexInt:&hexNum]) return;
-    self.textColor = [self colorWithRGBHex:hexNum];
+    [self setTitleColor:[self colorWithRGBHex:hexNum] forState:UIControlStateNormal];
 }
 
 - (UIColor *)colorWithRGBHex:(UInt32)hex {
@@ -31,7 +29,7 @@
 }
 
 
-- (NSString *)textHexColor{
+- (NSString *)titleHexColor{
     return @"0xffffff";
 }
 @end

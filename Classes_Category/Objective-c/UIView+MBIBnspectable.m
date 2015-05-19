@@ -38,6 +38,25 @@
     return [UIColor colorWithCGColor:self.layer.borderColor];
 }
 
+- (void)setBorderHexRgb:(NSString *)borderHexRgb{
+    NSScanner *scanner = [NSScanner scannerWithString:borderHexRgb];
+    unsigned hexNum;
+    if (![scanner scanHexInt:&hexNum]) return;
+    self.layer.borderColor = [self colorWithRGBHex:hexNum].CGColor;
+}
+
+-(NSString *)borderHexRgb{
+    return @"0xffffff";
+}
+
+- (void)setMasksToBounds:(BOOL)bounds{
+    self.layer.masksToBounds = bounds;
+}
+
+- (BOOL)masksToBounds{
+    return self.layer.masksToBounds;
+}
+
 #pragma mark - hexRgbColor
 - (void)setHexRgbColor:(NSString *)hexRgbColor{
     NSScanner *scanner = [NSScanner scannerWithString:hexRgbColor];
