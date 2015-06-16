@@ -9,7 +9,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+IB_DESIGNABLE
 @interface UILabel (MBIBnsepectable)
 // set text hex color
 @property (assign,nonatomic) IBInspectable NSString *textHexColor;

@@ -9,7 +9,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+IB_DESIGNABLE
 @interface UIView (MBIBnspectable)
 
 @property (assign,nonatomic) IBInspectable NSInteger cornerRadius;

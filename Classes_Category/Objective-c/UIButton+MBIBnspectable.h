@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+IB_DESIGNABLE
 @interface UIButton (MBIBnspectable)
 // set text hex color
 @property (assign,nonatomic) IBInspectable NSString *titleHexColor;
